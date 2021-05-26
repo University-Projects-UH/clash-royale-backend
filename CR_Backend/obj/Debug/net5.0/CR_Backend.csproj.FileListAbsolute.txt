@@ -1,0 +1,122 @@
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.deps.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.runtimeconfig.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.runtimeconfig.dev.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/appsettings.Development.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/appsettings.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.deps.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.runtimeconfig.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.runtimeconfig.dev.json
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/ref/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.pdb
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.Data.Sqlite.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.OpenApi.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.batteries_v2.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.nativelibrary.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.core.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/alpine-x64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-arm/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-armel/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-mips64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-x64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-x86/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-arm/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-arm64/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-x64/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.pdb
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.csprojAssemblyReference.cache
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.GeneratedMSBuildEditorConfig.editorconfig
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.AssemblyInfoInputs.cache
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.AssemblyInfo.cs
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.csproj.CoreCompileInputs.cache
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.MvcApplicationPartsAssemblyInfo.cs
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.MvcApplicationPartsAssemblyInfo.cache
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/staticwebassets/CR_Backend.StaticWebAssets.Manifest.cache
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/staticwebassets/CR_Backend.StaticWebAssets.xml
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/scopedcss/bundle/CR_Backend.styles.css
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.RazorTargetAssemblyInfo.cache
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.csproj.CopyComplete
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/ref/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.pdb
+/home/frank/Documentos/Tercer Año/c#/code/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.genruntimeconfig.cache
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/appsettings.Development.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/appsettings.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.deps.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.runtimeconfig.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.runtimeconfig.dev.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.deps.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.runtimeconfig.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.runtimeconfig.dev.json
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/ref/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/CR_Backend.pdb
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.Data.Sqlite.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Microsoft.OpenApi.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.batteries_v2.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.nativelibrary.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.core.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/alpine-x64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-arm/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-armel/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-mips64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-x64/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/linux-x86/native/libe_sqlite3.so
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-arm/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-arm64/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-x64/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/bin/Debug/net5.0/DataBaseConfig.pdb
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.csprojAssemblyReference.cache
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.GeneratedMSBuildEditorConfig.editorconfig
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.AssemblyInfoInputs.cache
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.AssemblyInfo.cs
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.csproj.CoreCompileInputs.cache
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.MvcApplicationPartsAssemblyInfo.cs
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.MvcApplicationPartsAssemblyInfo.cache
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/staticwebassets/CR_Backend.StaticWebAssets.Manifest.cache
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/staticwebassets/CR_Backend.StaticWebAssets.xml
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/scopedcss/bundle/CR_Backend.styles.css
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.RazorTargetAssemblyInfo.cache
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.csproj.CopyComplete
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/ref/CR_Backend.dll
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.pdb
+/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.genruntimeconfig.cache
