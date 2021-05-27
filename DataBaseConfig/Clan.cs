@@ -24,11 +24,8 @@ namespace DataBaseConfig
 
         public Region Region {get; set;}
 
-        // los miembros del clan
-        [InverseProperty(nameof(ClanMember.Clan))]
-        public virtual ICollection<ClanMember> ClanMembers {get; set;}
+        public virtual ICollection<Player> Players {get; set;}
 
-        [InverseProperty(nameof(WarClan.Clan))]
         public virtual ICollection<WarClan> WarClans {get; set;}
 
         public virtual ICollection<MeleeCardDonation> MeleeCardDonations {get; set;}
@@ -38,11 +35,14 @@ namespace DataBaseConfig
         public virtual ICollection<StructureCardDonation> StructureCardDonations {get; set;}
 
         public Clan(){
-            ClanMembers = new HashSet<ClanMember>();
             WarClans = new HashSet<WarClan>();
             MeleeCardDonations = new HashSet<MeleeCardDonation>();
             SpellCardDonations = new HashSet<SpellCardDonation>();
             StructureCardDonations = new HashSet<StructureCardDonation>();
+            Players = new HashSet<Player>();
+
+            ClanDescription = "Clash Royale Clan";
+            Type = "open";
         }
     }
 }

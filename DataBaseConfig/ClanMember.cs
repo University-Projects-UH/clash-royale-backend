@@ -15,9 +15,12 @@ namespace DataBaseConfig
         // llave foránea
         public int ClanID {get; set;}
 
-        [InverseProperty("ClanMembers")]
         public Clan Clan {get; set;}
 
         public string Charge {get; set;}
+
+        public ClanMember(){
+            Charge = "member";
+        }
     }
 }

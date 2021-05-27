@@ -24,21 +24,21 @@ namespace DataBaseConfig
         public int ClanID {get; set;}
 
         // la tupla en clan member que representa
-        public ClanMember ClanMember {get; set;}
+        public Clan Clan {get; set;}
 
-        public int MeleeID {get; set;}
+        public int? MeleeID {get; set;}
 
         // carta melee favorita
         [ForeignKey(nameof(MeleeID))]
         public MeleeCard MeleeCard {get; set;}
 
-        public int SpellID {get; set;}
+        public int? SpellID {get; set;}
 
         // carta hechizo favorita
         [ForeignKey(nameof(SpellID))]
         public SpellCard SpellCard {get; set;}
 
-        public int StructureID {get; set;}
+        public int? StructureID {get; set;}
 
         // carta estructura favorita
         [ForeignKey(nameof(StructureID))]
@@ -70,6 +70,8 @@ namespace DataBaseConfig
             MeleeCardDonations = new HashSet<MeleeCardDonation>();
             StructureCardDonations = new HashSet<StructureCardDonation>();
             SpellCardDonations = new HashSet<SpellCardDonation>();
+
+            Level = 1;
         }
     }
 }

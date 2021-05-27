@@ -41,15 +41,6 @@ namespace DataBaseConfig
             modelBuilder.Entity<ClanMember>(entity => 
             {
                 entity.HasKey( x => new {x.PlayerID, x.ClanID});
-                
-                //entity.HasOne(p => p.Player)
-                //    .WithOne(p => p.ClanMember)
-                //    .OnDelete(DeleteBehavior.ClientSetNull);
-
-                entity.HasOne(p => p.Clan)
-                    .WithMany(p => p.ClanMembers)
-                    .HasForeignKey(p => p.ClanID)
-                    .OnDelete(DeleteBehavior.ClientSetNull);
             });
             modelBuilder.Entity<PlayerChallenge>(entity => {
 

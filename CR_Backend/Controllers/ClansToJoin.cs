@@ -22,16 +22,23 @@ namespace CR_Backend.Controllers
 
         // Esta es la query 5
         [HttpGet]
-        public IQueryable<Clan> ClansToJoin(string name){
+        public IEnumerable<Clan> ClansToJoin(string name){
 
             var players = db.Players.Where(x => x.Alias == name);
+
+            var res = new List<Clan>();
 
             if(players.Count() == 0){
                 return null;
             }
             int trophys = players.First().MaxTrophysGet;
 
-            return db.Clans.Where(x => x.NecesaryTrophys <= trophys);
+            var posibleClans =  db.Clans.Where(x => x.NecesaryTrophys <= trophys).AsEnumerable();
+
+            foreach(var item in posibleClans){
+                res.Add(new Clan {ClanID = item.ClanID, ClanName = item.ClanName});
+            }
+            return res;
         }
     }
 }

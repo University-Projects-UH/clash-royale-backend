@@ -21,6 +21,13 @@ namespace DataBaseConfig
         public SpellCard(){
             PlayerSpellCards = new HashSet<PlayerSpellCard>();
             Players = new HashSet<Player>();
+
+            CardDescription = "Spell Card";
+            ElixirCost = 1;
+            Quality = "common";
+            Radio = 1;
+            SpellDuration = 1;
+            SpellDamage = 1;
         }
     }
 }

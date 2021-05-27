@@ -12,7 +12,6 @@ namespace DataBaseConfig
 
         public int UnitsCount {get; set;}
 
-        //[InverseProperty(nameof(Player.MeleeCard))]
         public virtual IEnumerable<Player> Players {get; set;}
 
         public virtual IEnumerable<PlayerMeleeCard> PlayerMeleeCards {get; set;}
@@ -23,6 +22,13 @@ namespace DataBaseConfig
             PlayerMeleeCards = new HashSet<PlayerMeleeCard>();
             Players = new HashSet<Player>();
             MeleeCardDonations = new HashSet<MeleeCardDonation>();
+
+            CardDescription = "Melee Card";
+            ElixirCost = 1;
+            Quality = "common";
+            LifePoints = 1;
+            RangeDamage = 1;
+            UnitsCount = 1;
         }
     }
 }

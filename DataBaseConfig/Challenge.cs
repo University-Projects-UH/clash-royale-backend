@@ -26,6 +26,13 @@ namespace DataBaseConfig
 
         public Challenge(){
             PlayerChallenges = new HashSet<PlayerChallenge>();
+
+            Cost = 1;
+            PricesOffer = 1;
+            MinLevel = 1;
+            ChallengeDescription = "Clash Royale Challenge";
+            ChallengeDuration = 1;
+            MinLevel = 1;
         }
     }
 }

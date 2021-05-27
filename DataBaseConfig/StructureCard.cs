@@ -22,6 +22,13 @@ namespace DataBaseConfig
             PlayerStructureCards = new HashSet<PlayerStructureCard>();
             Players = new HashSet<Player>();
             StructureCardDonations = new HashSet<StructureCardDonation>();
+
+            CardDescription = "Structure Card";
+            ElixirCost = 1;
+            Quality = "common";
+            LifePoints = 1;
+            RangeDamage = 1;
+            AttackSpeed = 1;
         }
     }
 }

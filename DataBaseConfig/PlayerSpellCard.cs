@@ -12,5 +12,10 @@ namespace DataBaseConfig
 
         [InverseProperty("PlayerSpellCards")]
         public Player Player {get; set;}
+
+        public PlayerSpellCard(){
+            InitialLevel = 1;
+            ActualLevel = 1;
+        }
     }
 }

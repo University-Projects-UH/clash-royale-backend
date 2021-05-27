@@ -12,5 +12,10 @@ namespace DataBaseConfig
 
         [InverseProperty("PlayerStructureCards")]
         public Player Player {get; set;}
+
+        public PlayerStructureCard(){
+            InitialLevel = 1;
+            ActualLevel = 1;
+        }
     }
 }

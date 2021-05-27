@@ -12,5 +12,10 @@ namespace DataBaseConfig
 
         [InverseProperty("PlayerMeleeCards")]
         public Player Player {get; set;}
+
+        PlayerMeleeCard(){
+            InitialLevel = 1;
+            ActualLevel = 1;
+        }
     }
 }

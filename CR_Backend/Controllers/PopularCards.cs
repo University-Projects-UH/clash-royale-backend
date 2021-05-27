@@ -26,22 +26,24 @@ namespace CR_Backend.Controllers
             
             var res = new List<Tuple<Clan, MeleeCard, SpellCard, StructureCard>>();
 
-            IQueryable<Clan> cl = db.Clans.Include(c => c.ClanMembers);
+            IQueryable<Clan> cl = db.Clans.Include(c => c.Players);
 
             foreach( var item in cl){
-
-                IQueryable<ClanMember> cm = db.ClanMembers
-                    .Where(x => x.ClanID == item.ClanID)
-                    .Include(c => c.Player);
 
                 List<int> meleeID = new List<int>();
                 List<int> spellID = new List<int>();
                 List<int> structureID = new List<int>();              
 
-                foreach(var item2 in cm){
-                    meleeID.Add(item2.Player.MeleeID);
-                    spellID.Add(item2.Player.SpellID);
-                    structureID.Add(item2.Player.StructureID);
+                foreach(var item2 in item.Players){
+                    if (item2.MeleeID != null){
+                        meleeID.Add((int)(item2.MeleeID));
+                    }
+                    if (item2.SpellID != null){
+                        spellID.Add((int)(item2.SpellID));
+                    }
+                    if (item2.StructureID != null){
+                        structureID.Add((int)(item2.StructureID));
+                    }
                 }
 
                 int favMelee = Modes(meleeID).First();
