@@ -45,16 +45,31 @@ namespace CR_Backend.Controllers
 
                 foreach( var id in moreMelee){
                     var c = db.MeleeCards.Where(x => x.CardID == id).First();
-                    melee.Add(new MeleeCard {CardID = c.CardID, CardName = c.CardName});     
+                    melee.Add(new MeleeCard {
+                        CardID = c.CardID, 
+                        CardName = c.CardName, 
+                        ElixirCost = c.ElixirCost,
+                        Quality = c.Quality,
+                        UnitsCount = c.UnitsCount});  
                 }
 
                 foreach( var id in moreSpell){
                     var c = db.SpellCards.Where(x => x.CardID == id).First();
-                    spell.Add( new SpellCard {CardID = c.CardID, CardName = c.CardName});
+                    spell.Add( new SpellCard {
+                        CardID = c.CardID, 
+                        CardName = c.CardName,
+                        ElixirCost = c.ElixirCost,
+                        Quality = c.Quality,
+                        SpellDamage = c.SpellDamage});
                 }
                 foreach( var id in moreStructure){
                     var c = db.StructureCards.Where(x => x.CardID == id).First();
-                    structure.Add( new StructureCard {CardID = c.CardID, CardName = c.CardName});
+                    structure.Add( new StructureCard {
+                        CardID = c.CardID, 
+                        CardName = c.CardName,
+                        ElixirCost = c.ElixirCost,
+                        Quality = c.Quality,
+                        LifePoints = c.LifePoints});
                 }
                 res.Add(new Tuple<Region, IEnumerable<MeleeCard>, IEnumerable<SpellCard>, IEnumerable<StructureCard>>(
                     new Region {RegionID = item.RegionID, RegionName = item.RegionName},

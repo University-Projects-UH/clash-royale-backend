@@ -13,7 +13,7 @@ namespace DataBaseConfig
         public string ClanDescription {get; set;}
 
         public string Type {get; set;}
-
+        
         public int MembersCount {get; set;}
 
         public int TrophysGetCount {get; set;}

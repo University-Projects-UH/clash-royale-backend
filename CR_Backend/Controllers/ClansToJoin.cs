@@ -36,7 +36,14 @@ namespace CR_Backend.Controllers
             var posibleClans =  db.Clans.Where(x => x.NecesaryTrophys <= trophys).AsEnumerable();
 
             foreach(var item in posibleClans){
-                res.Add(new Clan {ClanID = item.ClanID, ClanName = item.ClanName});
+                res.Add(new Clan {
+                    ClanID = item.ClanID, 
+                    ClanName = item.ClanName, 
+                    ClanDescription = item.ClanDescription, 
+                    NecesaryTrophys = item.NecesaryTrophys, 
+                    TrophysGetCount = item.TrophysGetCount, 
+                    Type = item.Type, 
+                    MembersCount = item.MembersCount});
             }
             return res;
         }

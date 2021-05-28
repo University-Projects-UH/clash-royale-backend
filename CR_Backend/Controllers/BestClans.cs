@@ -34,8 +34,17 @@ namespace CR_Backend.Controllers
                     var c = x.Clans.OrderBy(x => x.TrophysGetCount).First();
 
                     res.Add(new Tuple<Region, Clan>(
-                        new Region {RegionID = x.RegionID, RegionName = x.RegionName},
-                        new Clan {ClanID = c.ClanID, ClanName = c.ClanName})
+                        new Region {
+                            RegionID = x.RegionID, 
+                            RegionName = x.RegionName},
+                        new Clan {
+                            ClanID = c.ClanID, 
+                            ClanName = c.ClanName, 
+                            ClanDescription = c.ClanDescription, 
+                            NecesaryTrophys = c.NecesaryTrophys, 
+                            TrophysGetCount = c.TrophysGetCount, 
+                            Type = c.Type, 
+                            MembersCount = c.MembersCount})
                     );
                 }
             }

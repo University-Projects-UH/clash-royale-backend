@@ -55,10 +55,33 @@ namespace CR_Backend.Controllers
                 var stc = db.StructureCards.Where(x => x.CardID == favStructure).First();
 
                 res.Add(new Tuple<Clan, MeleeCard, SpellCard, StructureCard>(
-                    new Clan {ClanID = item.ClanID, ClanName = item.ClanName},
-                    new MeleeCard {CardID = mc.CardID, CardName = mc.CardName},
-                    new SpellCard {CardID = sc.CardID, CardName = sc.CardName},
-                    new StructureCard {CardID = stc.CardID, CardName = stc.CardName}
+                    new Clan {
+                        ClanID = item.ClanID, 
+                        ClanName = item.ClanName,
+                        ClanDescription = item.ClanDescription, 
+                        NecesaryTrophys = item.NecesaryTrophys, 
+                        TrophysGetCount = item.TrophysGetCount, 
+                        Type = item.Type, 
+                        MembersCount = item.MembersCount},
+                    new MeleeCard {
+                        CardID = mc.CardID, 
+                        CardName = mc.CardName, 
+                        ElixirCost = mc.ElixirCost,
+                        Quality = mc.Quality,
+                        UnitsCount = mc.UnitsCount},
+                    new SpellCard {
+                        CardID = sc.CardID, 
+                        CardName = sc.CardName,
+                        ElixirCost = sc.ElixirCost,
+                        Quality = sc.Quality,
+                        SpellDamage = sc.SpellDamage},
+                    new StructureCard {
+                        CardID = stc.CardID, 
+                        CardName = stc.CardName,
+                        ElixirCost = stc.ElixirCost,
+                        Quality = stc.Quality,
+                        LifePoints = stc.LifePoints
+                    }
                 ));
             }
             return res;
