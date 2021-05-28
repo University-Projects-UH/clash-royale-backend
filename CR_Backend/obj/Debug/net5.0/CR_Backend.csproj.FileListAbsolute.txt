@@ -120,3 +120,13 @@
 /home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/ref/CR_Backend.dll
 /home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.pdb
 /home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/CR_Backend/obj/Debug/net5.0/CR_Backend.genruntimeconfig.cache
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.csproj.AssemblyReference.cache
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.GeneratedMSBuildEditorConfig.editorconfig
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.AssemblyInfoInputs.cache
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.AssemblyInfo.cs
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.csproj.CoreCompileInputs.cache
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.MvcApplicationPartsAssemblyInfo.cs
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.MvcApplicationPartsAssemblyInfo.cache
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.dll
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/ref/CR_Backend.dll
+/home/alurquiza/workspace/SBD/clash-royale-backend/CR_Backend/obj/Debug/net5.0/CR_Backend.pdb

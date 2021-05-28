@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/DataBaseConfig/DataBaseConfig.csproj": {}
+    "/home/alurquiza/workspace/SBD/clash-royale-backend/DataBaseConfig/DataBaseConfig.csproj": {}
   },
   "projects": {
-    "/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/DataBaseConfig/DataBaseConfig.csproj": {
+    "/home/alurquiza/workspace/SBD/clash-royale-backend/DataBaseConfig/DataBaseConfig.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/DataBaseConfig/DataBaseConfig.csproj",
+        "projectUniqueName": "/home/alurquiza/workspace/SBD/clash-royale-backend/DataBaseConfig/DataBaseConfig.csproj",
         "projectName": "DataBaseConfig",
-        "projectPath": "/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/DataBaseConfig/DataBaseConfig.csproj",
-        "packagesPath": "/home/frank/.nuget/packages/",
-        "outputPath": "/home/frank/Documentos/Tercer Año/bases de datos 2/Proyecto/backend_server/DataBaseConfig/obj/",
+        "projectPath": "/home/alurquiza/workspace/SBD/clash-royale-backend/DataBaseConfig/DataBaseConfig.csproj",
+        "packagesPath": "/home/alurquiza/.nuget/packages/",
+        "outputPath": "/home/alurquiza/workspace/SBD/clash-royale-backend/DataBaseConfig/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/frank/.nuget/NuGet/NuGet.Config"
+          "/home/alurquiza/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
