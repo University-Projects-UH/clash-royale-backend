@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using System.IO;
 using Microsoft.EntityFrameworkCore;
 using DataBaseConfig;
+using Microsoft.AspNetCore.HttpOverrides;
 
 namespace CR_Backend
 {
@@ -26,9 +27,18 @@ namespace CR_Backend
 
         public IConfiguration Configuration { get; }
 
+        readonly string MyAllowSpecificOrigins = "http://localhost:3000";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.AddCors(options => {
+                options.AddPolicy(MyAllowSpecificOrigins, 
+                builder => {
+                    builder.SetIsOriginAllowed(isOriginAllowed: _ => true).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                });
+            });
 
             string dataBasePath = Path.Combine("..", "CalshRoyale.db");
             services.AddDbContext<ClashRoyaleDB>(options => options.UseSqlite($"Data Source={dataBasePath}"));
@@ -53,6 +63,12 @@ namespace CR_Backend
             //app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseForwardedHeaders(new ForwardedHeadersOptions{
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 
