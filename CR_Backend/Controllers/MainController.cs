@@ -9,23 +9,16 @@ using System.Security.Claims;
 using System.Text;
 
 using Microsoft.AspNetCore.Authorization;
-using CR_Backend.Models;
 
 namespace CR_Backend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class LoginController : ControllerBase
+    public class MainController : ControllerBase
     {
-        [AllowAnonymous]
-        [HttpPost("authenticate")]
-        public IActionResult Authenticate([FromBody]LoginRequest model)
+        [HttpGet("gettoken")]
+        public Object GetToken()
         {
-            var user = model;
-
-            if (user == null)
-                return BadRequest(new { message = "Username or password is incorrect" });
-
             string key = "my_secret_key_12345"; //Secret key which will be used later during validation    
             var issuer = "http://localhost:5000";  //normally this will be your site URL    
         
@@ -36,8 +29,8 @@ namespace CR_Backend.Controllers
             var permClaims = new List<Claim>();    
             permClaims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));    
             permClaims.Add(new Claim("valid", "1"));    
-            // permClaims.Add(new Claim("userid", "1"));    
-            permClaims.Add(new Claim("name", user.Username));    
+            permClaims.Add(new Claim("userid", "1"));    
+            permClaims.Add(new Claim("name", "bilal"));    
         
             //Create Security Token object by giving required parameters    
             var token = new JwtSecurityToken(issuer, //Issure    
@@ -46,13 +39,36 @@ namespace CR_Backend.Controllers
                             expires: DateTime.Now.AddDays(1),    
                             signingCredentials: credentials);    
             var jwt_token = new JwtSecurityTokenHandler().WriteToken(token);    
+            return new { data = jwt_token };    
+        }    
 
-            // return basic user info and authentication token
-            return Ok(new
-            {
-                Username = user.Username,
-                Token = jwt_token
-            });
-        }
+        // Test
+
+        [HttpPost("getname1")]
+        public String GetName1() {  
+            if (User.Identity.IsAuthenticated) {  
+                var identity = User.Identity as ClaimsIdentity;  
+                if (identity != null) {  
+                    IEnumerable < Claim > claims = identity.Claims;  
+                }  
+                return "Valid";  
+            } else {  
+                return "Invalid";  
+            }  
+        }  
+        
+        [Authorize]  
+        [HttpPost("getname2")]  
+        public Object GetName2() {  
+            var identity = User.Identity as ClaimsIdentity;  
+            if (identity != null) {  
+                IEnumerable < Claim > claims = identity.Claims;  
+                var name = claims.Where(p => p.Type == "name").FirstOrDefault() ? .Value;  
+                return new {  
+                    data = name  
+                };      
+            }  
+            return null;  
+        } 
     }
 }

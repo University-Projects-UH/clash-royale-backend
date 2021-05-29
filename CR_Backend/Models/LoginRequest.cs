@@ -1,4 +1,5 @@
 using System;  
+
 namespace CR_Backend.Models  
 {
     public class LoginRequest
