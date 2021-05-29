@@ -10,6 +10,7 @@ using System.Text;
 
 using Microsoft.AspNetCore.Authorization;
 using CR_Backend.Models;
+using CR_Backend.Services;
 
 namespace CR_Backend.Controllers
 {
@@ -24,13 +25,15 @@ namespace CR_Backend.Controllers
             var user = model;
 
             if (user == null)
+                return BadRequest(new { message = "Username and password are necessary" });
+            if (!CredentialsServices.Check(user))
                 return BadRequest(new { message = "Username or password is incorrect" });
 
             string key = "my_secret_key_12345"; //Secret key which will be used later during validation    
             var issuer = "http://localhost:5000";  //normally this will be your site URL    
         
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));    
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);    
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
         
             //Create a List of Claims, Keep claims name short    
             var permClaims = new List<Claim>();    
