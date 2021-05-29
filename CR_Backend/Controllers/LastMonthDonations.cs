@@ -22,10 +22,10 @@ namespace CR_Backend.Controllers
 
         // Esta es la query 3
         [HttpGet]
-        public IEnumerable<Tuple<Region, IEnumerable<MeleeCard>, IEnumerable<SpellCard>, IEnumerable<StructureCard>>> LastMonthDonations(){
+        public IEnumerable<Tuple<Region, MeleeCard, SpellCard, StructureCard>> LastMonthDonations(){
 
             DateTime aMonthAgo = DateTime.Now.AddMonths(-1);
-            var res = new List<Tuple<Region, IEnumerable<MeleeCard>, IEnumerable<SpellCard>, IEnumerable<StructureCard>>>();
+            var res = new List<Tuple<Region, MeleeCard, SpellCard, StructureCard>>();
 
             IQueryable<Region> reg = db.Regions.Include(x => x.Clans);
 
@@ -39,40 +39,51 @@ namespace CR_Backend.Controllers
                 var moreMelee = Modes(mcd);
                 var moreSpell = Modes(scd);
                 var moreStructure = Modes(stcd);
-                List<MeleeCard> melee = new List<MeleeCard>();
-                List<SpellCard> spell = new List<SpellCard>();
-                List<StructureCard> structure = new List<StructureCard>();
 
-                foreach( var id in moreMelee){
-                    var c = db.MeleeCards.Where(x => x.CardID == id).First();
-                    melee.Add(new MeleeCard {
+                MeleeCard melee = null;
+                if(moreMelee != -1){
+                    var c = db.MeleeCards.Where(x => x.CardID == moreMelee).First();
+                    melee = new MeleeCard{
                         CardID = c.CardID, 
                         CardName = c.CardName, 
                         ElixirCost = c.ElixirCost,
                         Quality = c.Quality,
-                        UnitsCount = c.UnitsCount});  
+                        UnitsCount = c.UnitsCount,
+                        LifePoints = c.LifePoints,
+                        RangeDamage = c.RangeDamage
+                    };
+                }
+                SpellCard spell = null;
+                if(moreSpell != -1){
+                    var c = db.SpellCards.Where(x => x.CardID == moreSpell).First();
+                    spell = new SpellCard{
+                        CardID = c.CardID, 
+                        CardName = c.CardName,
+                        ElixirCost = c.ElixirCost,
+                        Quality = c.Quality,
+                        SpellDamage = c.SpellDamage,
+                        SpellDuration = c.SpellDuration,
+                        Radio = c.Radio
+                    };
+                }
+                StructureCard structure = null;
+                if(moreStructure != -1){
+                    var c = db.StructureCards.Where(x => x.CardID == moreStructure).First();
+                    structure = new StructureCard{
+                        CardID = c.CardID, 
+                        CardName = c.CardName,
+                        ElixirCost = c.ElixirCost,
+                        Quality = c.Quality,
+                        LifePoints = c.LifePoints,
+                        RangeDamage = c.RangeDamage,
+                        AttackSpeed = c.AttackSpeed
+                    };
                 }
 
-                foreach( var id in moreSpell){
-                    var c = db.SpellCards.Where(x => x.CardID == id).First();
-                    spell.Add( new SpellCard {
-                        CardID = c.CardID, 
-                        CardName = c.CardName,
-                        ElixirCost = c.ElixirCost,
-                        Quality = c.Quality,
-                        SpellDamage = c.SpellDamage});
-                }
-                foreach( var id in moreStructure){
-                    var c = db.StructureCards.Where(x => x.CardID == id).First();
-                    structure.Add( new StructureCard {
-                        CardID = c.CardID, 
-                        CardName = c.CardName,
-                        ElixirCost = c.ElixirCost,
-                        Quality = c.Quality,
-                        LifePoints = c.LifePoints});
-                }
-                res.Add(new Tuple<Region, IEnumerable<MeleeCard>, IEnumerable<SpellCard>, IEnumerable<StructureCard>>(
-                    new Region {RegionID = item.RegionID, RegionName = item.RegionName},
+                res.Add(new Tuple<Region, MeleeCard, SpellCard, StructureCard>(
+                    new Region {
+                        RegionID = item.RegionID, 
+                        RegionName = item.RegionName},
                     melee,
                     spell,
                     structure
@@ -80,20 +91,16 @@ namespace CR_Backend.Controllers
             }
             return res;
         }
-        public static List<int> Modes(IEnumerable<int> list){
+        public static int Modes(IEnumerable<int> list){
             int times = 0;
-            List<int> modes = new List<int>();
+            int modes = -1;
 
             IEnumerable<int> dist = list.Distinct();
             foreach( var item in dist){
                 int temp = list.Where(x => x == item).Count();
-                if (temp == times){
-                    modes.Add(item);
-                }
                 if (temp > times){
                     times = temp;
-                    modes = new List<int>();
-                    modes.Add(item);
+                    modes = item;
                 }
             }
             return modes;

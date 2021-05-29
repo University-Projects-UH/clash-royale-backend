@@ -53,26 +53,6 @@ namespace CR_Backend.Controllers
                             MeleeID = best.MeleeID
                             }
                     ));
-                    /*
-                    res.Add(new Tuple<War, Clan, Player>(
-                        new War {
-                            WarID = x.WarID, 
-                            StartDate = x.StartDate},
-                        new Clan {
-                            ClanName = clm.Clan.ClanName, 
-                            ClanID = clm.ClanID,
-                            Type = clm.Clan.Type,
-                            TrophysGetCount = clm.Clan.TrophysGetCount,
-                            MembersCount = clm.Clan.MembersCount},
-                        new Player {
-                            PlayerID = best.PlayerID, 
-                            Alias = best.Alias,
-                            Level = best.Level,
-                            VictoryCount = best.VictoryCount,
-                            MeleeID = best.MeleeID
-                            }
-                    ));
-                    */
                 }
                 res.Add(new Tuple<War, List<Tuple<Clan, Player>>>(
                     new War{
