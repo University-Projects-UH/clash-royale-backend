@@ -79,15 +79,17 @@ namespace CR_Backend.Controllers
                         AttackSpeed = c.AttackSpeed
                     };
                 }
+                if(!(melee == null && spell == null && structure == null)){
 
-                res.Add(new Tuple<Region, MeleeCard, SpellCard, StructureCard>(
-                    new Region {
-                        RegionID = item.RegionID, 
-                        RegionName = item.RegionName},
-                    melee,
-                    spell,
-                    structure
-                ));
+                    res.Add(new Tuple<Region, MeleeCard, SpellCard, StructureCard>(
+                        new Region {
+                            RegionID = item.RegionID, 
+                            RegionName = item.RegionName},
+                        melee,
+                        spell,
+                        structure
+                    ));
+                }
             }
             return res;
         }
