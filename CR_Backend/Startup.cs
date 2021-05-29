@@ -15,6 +15,9 @@ using System.IO;
 using Microsoft.EntityFrameworkCore;
 using DataBaseConfig;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.IdentityModel.Tokens;    
+using Microsoft.AspNetCore.Authentication.JwtBearer;    
+using System.Text;
 
 namespace CR_Backend
 {
@@ -39,6 +42,9 @@ namespace CR_Backend
                     builder.SetIsOriginAllowed(isOriginAllowed: _ => true).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
                 });
             });
+            // JWT
+            SetupJWTServices(services);  
+            services.AddControllers();
 
             string dataBasePath = Path.Combine("..", "CalshRoyale.db");
             services.AddDbContext<ClashRoyaleDB>(options => options.UseSqlite($"Data Source={dataBasePath}"));
@@ -49,6 +55,38 @@ namespace CR_Backend
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CR_Backend", Version = "v1" });
             });
         }
+
+        private void SetupJWTServices(IServiceCollection services)  
+        {  
+            string key = "my_secret_key_12345"; //this should be same which is used while creating token      
+            var issuer = "http://localhost:5000";  //this should be same which is used while creating token  
+  
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)  
+          .AddJwtBearer(options =>  
+          {  
+              options.TokenValidationParameters = new TokenValidationParameters  
+              {  
+                  ValidateIssuer = true,  
+                  ValidateAudience = true,  
+                  ValidateIssuerSigningKey = true,  
+                  ValidIssuer = issuer,  
+                  ValidAudience = issuer,  
+                  IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))  
+              };  
+  
+              options.Events = new JwtBearerEvents  
+              {  
+                  OnAuthenticationFailed = context =>  
+                  {  
+                      if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))  
+                      {  
+                          context.Response.Headers.Add("Token-Expired", "true");  
+                      }  
+                      return Task.CompletedTask;  
+                  }  
+              };  
+          });  
+        } 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -69,8 +107,9 @@ namespace CR_Backend
             });
 
             app.UseCors(MyAllowSpecificOrigins);
-
-            app.UseAuthorization();
+            
+            app.UseAuthentication();  
+            app.UseAuthorization();  
 
             app.UseEndpoints(endpoints =>
             {
