@@ -21,7 +21,7 @@ namespace DataBaseConfig
 
         public int MaxTrophysGet {get; set;}
 
-        public int ClanID {get; set;}
+        public int? ClanID {get; set;}
 
         // la tupla en clan member que representa
         public Clan Clan {get; set;}
