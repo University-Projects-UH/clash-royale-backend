@@ -39,5 +39,26 @@ namespace CR_Backend.Controllers
             return res;
 
         }
+
+        [HttpPost]
+        [ProducesResponseType(201, Type = typeof(Clan))]
+        [ProducesResponseType(400)]
+        public void Create([FromBody] Clan c){
+            if (c == null){
+                BadRequest();
+                return;
+            }
+            if(!ModelState.IsValid){
+                BadRequest();
+                return;
+            }
+
+            db.Clans.Add(c);
+            int state = db.SaveChanges();
+            if (state == 1){
+                return;
+            }
+            BadRequest();
+        }
     }
 }
